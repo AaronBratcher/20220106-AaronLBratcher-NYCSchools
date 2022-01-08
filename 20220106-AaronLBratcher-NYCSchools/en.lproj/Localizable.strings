@@ -1,0 +1,17 @@
+/* 
+  Localizable.strings
+  NYCSchools
+
+  Created by Aaron Bratcher on 1/7/22.
+  
+*/
+"schoolListView.title" = "NYC Schools";
+"schoolListView.loading" = "Loading School Information";
+"schoolListView.error" = "Error loading information";
+
+"scoresView.loading" = "Loading Scores";
+"scoresView.error" = "Error loading scores";
+"scoresView.takers" = "# Test Takers:";
+"scoresView.reading" = "Avg Reading Score:";
+"scoresView.math" = "Avg Math Score:";
+"scoresView.writing" = "Avg Writing Score:";
