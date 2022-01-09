@@ -27,6 +27,7 @@
 		893795CA2786F5DA00D8A4B7 /* _0220106_AaronLBratcher_NYCSchoolsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893795C92786F5DA00D8A4B7 /* _0220106_AaronLBratcher_NYCSchoolsTests.swift */; };
 		893795D42786F5DA00D8A4B7 /* _0220106_AaronLBratcher_NYCSchoolsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893795D32786F5DA00D8A4B7 /* _0220106_AaronLBratcher_NYCSchoolsUITests.swift */; };
 		893795D62786F5DA00D8A4B7 /* _0220106_AaronLBratcher_NYCSchoolsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893795D52786F5DA00D8A4B7 /* _0220106_AaronLBratcher_NYCSchoolsUITestsLaunchTests.swift */; };
+		8963333C278B569800BD32E5 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8963333B278B569800BD32E5 /* SearchBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,7 @@
 		893795CF2786F5DA00D8A4B7 /* 20220106-AaronLBratcher-NYCSchoolsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "20220106-AaronLBratcher-NYCSchoolsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		893795D32786F5DA00D8A4B7 /* _0220106_AaronLBratcher_NYCSchoolsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _0220106_AaronLBratcher_NYCSchoolsUITests.swift; sourceTree = "<group>"; };
 		893795D52786F5DA00D8A4B7 /* _0220106_AaronLBratcher_NYCSchoolsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _0220106_AaronLBratcher_NYCSchoolsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8963333B278B569800BD32E5 /* SearchBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				8934AB4927890EA300B44218 /* CardView.swift */,
+				8963333B278B569800BD32E5 /* SearchBar.swift */,
 			);
 			path = "Shared UI";
 			sourceTree = "<group>";
@@ -351,6 +354,7 @@
 			files = (
 				8934AB5127890EA300B44218 /* String.swift in Sources */,
 				8934AB5427890EA300B44218 /* School.swift in Sources */,
+				8963333C278B569800BD32E5 /* SearchBar.swift in Sources */,
 				8934AB5527890EA300B44218 /* SchoolListViewModel.swift in Sources */,
 				8934AB5227890EA300B44218 /* Color.swift in Sources */,
 				8934AB5A27890EA300B44218 /* CardView.swift in Sources */,

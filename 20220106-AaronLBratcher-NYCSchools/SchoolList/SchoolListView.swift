@@ -22,6 +22,7 @@ struct SchoolListView: View {
                     }, phoneAction: { school in
                         viewModel.call(school)
                     }, scores: $viewModel.scores
+                    , searchString: $viewModel.searchString
                     )
                 case .loading:
                     VStack {

@@ -13,8 +13,19 @@ class SchoolListViewModel: ObservableObject {
     @Published var schools: [School] = []
     @Published var loadingStatus: LoadingStatus = .loading
     @Published var scores: [String: Scores]?
+    @Published var searchString: String = "" {
+        didSet {
+            if searchString.count < 2 {
+                schools = allSchools
+                return
+            }
+            
+            schools = allSchools.filter({ $0.schoolName.contains(searchString) })
+        }
+    }
     
     private let downloadManager: DownloadManager
+    private var allSchools: [School] = []
     
     init(downloadManager: DownloadManager = DownloadManager.shared) {
         self.downloadManager = downloadManager
@@ -26,6 +37,7 @@ class SchoolListViewModel: ObservableObject {
             switch results {
             case .success(let schools):
                 DispatchQueue.main.async {
+                    self.allSchools = schools
                     self.schools = schools
                     self.loadingStatus = .complete
                 }
