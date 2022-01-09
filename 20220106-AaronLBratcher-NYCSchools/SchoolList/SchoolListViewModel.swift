@@ -22,7 +22,7 @@ class SchoolListViewModel: ObservableObject {
         // this would be a good place to use the new async/await syntax
         downloadManager.downloadSchools() { [weak self] results in
             guard let self = self else { return }
-            
+
             switch results {
             case .success(let schools):
                 DispatchQueue.main.async {
