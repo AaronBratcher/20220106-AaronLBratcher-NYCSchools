@@ -24,6 +24,14 @@ class SchoolListViewModel: ObservableObject {
         }
     }
     
+    lazy var showPhone: Bool = {
+        if let url = URL(string: "tel://\(312-555-1212)"), UIApplication.shared.canOpenURL(url) {
+            return true
+        } else {
+            return false
+        }
+    }()
+    
     private let downloadManager: DownloadManager
     private var allSchools: [School] = []
     

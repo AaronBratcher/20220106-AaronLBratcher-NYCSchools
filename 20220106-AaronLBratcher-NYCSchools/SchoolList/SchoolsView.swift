@@ -12,6 +12,7 @@ struct SchoolsView: View {
     let websiteAction: ((URL) -> Void)
     let mapAction: ((School) -> Void)
     let phoneAction: ((School) -> Void)
+    let showPhone: Bool
     @Binding var scores: [String: Scores]?
     @Binding var searchString: String
     
@@ -49,7 +50,7 @@ struct SchoolsView: View {
                                             }
                                     }
                                     Spacer()
-                                    if let url = URL(string: "tel://\(school.phone)"), UIApplication.shared.canOpenURL(url) {
+                                    if showPhone {
                                         Image(systemName: "phone.circle")
                                             .resizable()
                                             .frame(width: 30, height: 30)
@@ -93,14 +94,16 @@ struct SchoolsView_Previews: PreviewProvider {
         SchoolsView(schools: mockSchools, websiteAction: { url in
         }, mapAction: { school in
         }, phoneAction: { school in
-        }, scores: .constant(nil)
-                    , searchString: .constant(""))
+        }, showPhone: true
+        , scores: .constant(nil)
+        , searchString: .constant(""))
         
         SchoolsView(schools: mockSchools, websiteAction: { url in
         }, mapAction: { school in
         }, phoneAction: { school in
-        }, scores: .constant(mockScoreDict)
-                    , searchString: .constant(""))
+        }, showPhone: false
+        ,scores: .constant(mockScoreDict)
+        , searchString: .constant(""))
             .environment(\.colorScheme, .dark)
             .previewDisplayName("Dark Mode")
     }

@@ -21,7 +21,8 @@ struct SchoolListView: View {
                         viewModel.showMap(for: school)
                     }, phoneAction: { school in
                         viewModel.call(school)
-                    }, scores: $viewModel.scores
+                    }, showPhone: viewModel.showPhone
+                    ,scores: $viewModel.scores
                     , searchString: $viewModel.searchString
                     )
                 case .loading:
