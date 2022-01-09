@@ -15,8 +15,6 @@
 		8934AB5527890EA300B44218 /* SchoolListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8934AB4127890EA300B44218 /* SchoolListViewModel.swift */; };
 		8934AB5627890EA300B44218 /* SchoolListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8934AB4227890EA300B44218 /* SchoolListView.swift */; };
 		8934AB5727890EA300B44218 /* DownloadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8934AB4427890EA300B44218 /* DownloadManager.swift */; };
-		8934AB5827890EA300B44218 /* 2017_DOE_High_School_Directory.csv in Resources */ = {isa = PBXBuildFile; fileRef = 8934AB4627890EA300B44218 /* 2017_DOE_High_School_Directory.csv */; };
-		8934AB5927890EA300B44218 /* 2012_SAT_Results.csv in Resources */ = {isa = PBXBuildFile; fileRef = 8934AB4727890EA300B44218 /* 2012_SAT_Results.csv */; };
 		8934AB5A27890EA300B44218 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8934AB4927890EA300B44218 /* CardView.swift */; };
 		8934AB5B27890EA300B44218 /* LoadingStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8934AB4B27890EA300B44218 /* LoadingStatus.swift */; };
 		8934AB5C27890EA300B44218 /* Scores.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8934AB4D27890EA300B44218 /* Scores.swift */; };
@@ -57,8 +55,6 @@
 		8934AB4127890EA300B44218 /* SchoolListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SchoolListViewModel.swift; sourceTree = "<group>"; };
 		8934AB4227890EA300B44218 /* SchoolListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SchoolListView.swift; sourceTree = "<group>"; };
 		8934AB4427890EA300B44218 /* DownloadManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadManager.swift; sourceTree = "<group>"; };
-		8934AB4627890EA300B44218 /* 2017_DOE_High_School_Directory.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 2017_DOE_High_School_Directory.csv; sourceTree = "<group>"; };
-		8934AB4727890EA300B44218 /* 2012_SAT_Results.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 2012_SAT_Results.csv; sourceTree = "<group>"; };
 		8934AB4927890EA300B44218 /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		8934AB4B27890EA300B44218 /* LoadingStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingStatus.swift; sourceTree = "<group>"; };
 		8934AB4D27890EA300B44218 /* Scores.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Scores.swift; sourceTree = "<group>"; };
@@ -130,15 +126,6 @@
 			path = Utilities;
 			sourceTree = "<group>";
 		};
-		8934AB4527890EA300B44218 /* Source Data */ = {
-			isa = PBXGroup;
-			children = (
-				8934AB4627890EA300B44218 /* 2017_DOE_High_School_Directory.csv */,
-				8934AB4727890EA300B44218 /* 2012_SAT_Results.csv */,
-			);
-			path = "Source Data";
-			sourceTree = "<group>";
-		};
 		8934AB4827890EA300B44218 /* Shared UI */ = {
 			isa = PBXGroup;
 			children = (
@@ -193,7 +180,6 @@
 				8934AB4827890EA300B44218 /* Shared UI */,
 				8934AB3A27890EA300B44218 /* Extensions */,
 				8934AB4A27890EA300B44218 /* Shared Definitions */,
-				8934AB4527890EA300B44218 /* Source Data */,
 				8934AB4327890EA300B44218 /* Utilities */,
 				8934AB6427890FC000B44218 /* Assets.xcassets */,
 				8934AB6327890EB400B44218 /* Localizable.strings */,
@@ -337,9 +323,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8934AB6127890EB400B44218 /* Localizable.strings in Resources */,
-				8934AB5827890EA300B44218 /* 2017_DOE_High_School_Directory.csv in Resources */,
 				893795C02786F5DA00D8A4B7 /* Preview Assets.xcassets in Resources */,
-				8934AB5927890EA300B44218 /* 2012_SAT_Results.csv in Resources */,
 				8934AB6527890FC000B44218 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
