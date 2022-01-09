@@ -2,6 +2,3 @@
 NYC School Sample
 
 Sample app showing the schools of NYC
-
-To do:
-- Add search bar
