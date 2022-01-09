@@ -45,6 +45,7 @@ struct SearchBar: View {
  
             if isEditing {
                 Button(action: {
+                    self.isEditing = false
                     UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
                 }) {
                     Image(systemName: "keyboard.chevron.compact.down")
