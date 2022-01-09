@@ -29,7 +29,6 @@
 		893795CA2786F5DA00D8A4B7 /* _0220106_AaronLBratcher_NYCSchoolsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893795C92786F5DA00D8A4B7 /* _0220106_AaronLBratcher_NYCSchoolsTests.swift */; };
 		893795D42786F5DA00D8A4B7 /* _0220106_AaronLBratcher_NYCSchoolsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893795D32786F5DA00D8A4B7 /* _0220106_AaronLBratcher_NYCSchoolsUITests.swift */; };
 		893795D62786F5DA00D8A4B7 /* _0220106_AaronLBratcher_NYCSchoolsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893795D52786F5DA00D8A4B7 /* _0220106_AaronLBratcher_NYCSchoolsUITestsLaunchTests.swift */; };
-		893795E92786F99900D8A4B7 /* CodableCSV in Frameworks */ = {isa = PBXBuildFile; productRef = 893795E82786F99900D8A4B7 /* CodableCSV */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,7 +81,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				893795E92786F99900D8A4B7 /* CodableCSV in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,7 +245,6 @@
 			);
 			name = "20220106-AaronLBratcher-NYCSchools";
 			packageProductDependencies = (
-				893795E82786F99900D8A4B7 /* CodableCSV */,
 			);
 			productName = "20220106-AaronLBratcher-NYCSchools";
 			productReference = 893795B52786F5D800D8A4B7 /* 20220106-AaronLBratcher-NYCSchools.app */;
@@ -322,7 +319,6 @@
 			);
 			mainGroup = 893795AC2786F5D800D8A4B7;
 			packageReferences = (
-				893795E72786F99900D8A4B7 /* XCRemoteSwiftPackageReference "CodableCSV" */,
 			);
 			productRefGroup = 893795B62786F5D800D8A4B7 /* Products */;
 			projectDirPath = "";
@@ -716,25 +712,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		893795E72786F99900D8A4B7 /* XCRemoteSwiftPackageReference "CodableCSV" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/dehesa/CodableCSV";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.6.7;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		893795E82786F99900D8A4B7 /* CodableCSV */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 893795E72786F99900D8A4B7 /* XCRemoteSwiftPackageReference "CodableCSV" */;
-			productName = CodableCSV;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 893795AD2786F5D800D8A4B7 /* Project object */;
 }
