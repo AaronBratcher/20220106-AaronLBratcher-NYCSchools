@@ -56,7 +56,12 @@ struct School: Codable, Identifiable {
 
         self.location = location.stripParentheticalText()
         phone = try container.decode(String.self, forKey: .phone)
-        website = try container.decode(String.self, forKey: .website)
+        
+        var website = try container.decode(String.self, forKey: .website)
+        if !website.starts(with: "https://") && !website.starts(with: "http://") {
+            website = "https://\(website)"
+        }
+        self.website = website
     }
 }
 
