@@ -12,6 +12,7 @@ struct SearchBar: View {
     @Binding var text: String
  
     @State private var isEditing = false
+    @FocusState private var searchTextFocused: Bool
  
     var body: some View {
         HStack {
@@ -24,7 +25,9 @@ struct SearchBar: View {
                 .padding(.horizontal, 10)
                 .onTapGesture {
                     self.isEditing = true
-                }.overlay(
+                }
+                .focused($searchTextFocused)
+                .overlay(
                     HStack {
                         Image(systemName: "magnifyingglass")
                             .foregroundColor(.gray)
@@ -46,14 +49,14 @@ struct SearchBar: View {
             if isEditing {
                 Button(action: {
                     self.isEditing = false
-                    UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
+                    self.searchTextFocused = false
                 }) {
                     Image(systemName: "keyboard.chevron.compact.down")
                 }
                 Button(action: {
                     self.isEditing = false
                     self.text = ""
-                    UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
+                    self.searchTextFocused = false
  
                 }) {
                     Text("search.cancel".localized)

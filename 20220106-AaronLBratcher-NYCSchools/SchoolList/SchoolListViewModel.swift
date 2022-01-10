@@ -19,8 +19,12 @@ class SchoolListViewModel: ObservableObject {
                 schools = allSchools
                 return
             }
-            
-            schools = allSchools.filter({ $0.schoolName.contains(searchString) })
+            DispatchQueue.global().async {
+                let filteredSchools = self.allSchools.filter({ $0.schoolName.contains(self.searchString) || $0.location.contains(self.searchString) })
+                DispatchQueue.main.async {
+                    self.schools = filteredSchools
+                }
+            }
         }
     }
     
