@@ -8,6 +8,7 @@
 "schoolListView.title" = "NYC Schools";
 "schoolListView.loading" = "Loading School Information";
 "schoolListView.error" = "Error loading information";
+"schoolListView.empty" = "No matching schools";
 
 "scoresView.loading" = "Loading Scores";
 "scoresView.error" = "Error loading scores";

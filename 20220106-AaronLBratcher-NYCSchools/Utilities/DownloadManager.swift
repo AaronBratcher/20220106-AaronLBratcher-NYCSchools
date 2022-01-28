@@ -17,6 +17,8 @@ class DownloadManager: ObservableObject {
     static let shared = DownloadManager()
     private var subscriptions = Set<AnyCancellable>()
     
+    private init() {}
+    
     typealias SchoolResults = Result<[School],DownloadError>
     func downloadSchools(completion: @escaping (SchoolResults) -> Void) {
         do {
